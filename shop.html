@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    body{
+        background: linear-gradient(to right, yellow, green)
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: lightgreen;
+        color:black;
+        padding-left: 30px;
+        font-size: larger;
+    }
+    .navbar ul{
+        display: flex;
+        padding: 10px;
+        list-style: none;
+    }
+    .navbar ul a{
+     text-decoration: none;
+     margin-left: 20px;
+     color: black;   
+    }
+    .item{
+        display: flex;
+    }
+    .items{
+        height: 30%;
+        width: 20%;
+        background-color: whitesmoke;
+        padding: 1%;
+        margin: 2%;
+        border-radius: 20px;
+        text-align: center;
+        border-color: black;
+        border-style: groove;
+        justify-content: space-between;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .shop{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: larger;
+    }
+    .items button{
+        background-color: greenyellow;
+        height: 30px;
+        width: 90px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .items button:hover{
+        background-color: orangered;
+    }
+    .items img{
+        border-radius: 20px;
+    }
+.footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+        background: linear-gradient(to left, green, black);
+        color: white;
+    }
+    .footer2 ul li{
+        list-style: none;
+    }
+    .footer3 button{
+        height: 40px;
+        width: 80px;
+        border-radius: 10px;
+        color: whitesmoke;
+        background-color: grey;
+        margin-top: 10px;
+    }
+    .footer3 input{
+        font-size: larger;
+    }
+    .last{
+        text-align: center;
+        color: white;
+        background: linear-gradient(to left, black, green);
+        padding: 2%;
+        font-size: larger;
+    }
+
+</style>
+<body>
+     <nav class="navbar">
+        <h2>Daily Greens </h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html"><i class="bi bi-cart-dash"></i>Cart</a></li>
+        </ul>
+    </nav>
+    <div class="shop">
+        <h1>Shop Organic Goodness</h1>
+        <p>Browse through our handpicked organic food collection</p>
+        <div class="item">
+            <div class="items">
+<img src="assets/photos/apple.webp" height="200px" width="200px" alt="apple">
+<p>Organic Apples</p>
+<h4>₹120.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+                        <div class="items">
+<img src="assets/photos/orange.jpg" height="200px" width="200px" alt="apple">
+<p>Organic Orange</p>
+<h4>₹100.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+            <div class="items">
+<img src="assets/photos/watermelon.webp" height="200px" width="200px" alt="apple">
+<p>Organic watermelon</p>
+<h4>₹40.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+            <div class="items">
+<img src="assets/photos/gauva.avif" height="200px" width="200px" alt="apple">
+<p>Organic Gauva</p>
+<h4>₹70.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+
+        </div>
+        <div class="item">
+            <div class="items">
+<img src="assets/photos/tomato.jpg" height="200px" width="200px" alt="apple">
+<p>Organic tomato</p>
+<h4>₹25.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+                        <div class="items">
+<img src="assets/photos/beetroot.webp" height="200px" width="200px" alt="apple">
+<p>Organic beetroot</p>
+<h4>₹30.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+            <div class="items">
+<img src="assets/photos/carrot.jpg" height="200px" width="200px" alt="apple">
+<p>Organic carrot</p>
+<h4>₹40.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+            <div class="items">
+<img src="assets/photos/onion.webp" height="200px" width="200px" alt="apple">
+<p>Organic onion</p>
+<h4>₹20.00 / kg</h4>
+<button>Add to cart</button>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+<div class="footer1">
+<h3>About GreenHarvest</h3><br>
+<p>We deliver fresh, organic, and eco-friendly food products </p> 
+   <p>from trusted local farms. Eat healthy, live better.</p>
+</div>
+<div class="footer2">
+    <h3>Quick Links</h3><br>
+    <ul>
+        <li><a href="#"></a>Shop</li>
+        <li><a href="#"></a>About us</li>
+        <li><a href="#"></a>Contact</li>
+        <li><a href="#"></a>Login</li>
+    </ul>
+</div>
+<div class="footer3">
+    <h3>Newsletter</h3>
+    <input type="text" placeholder="Email"><br>
+    <button>Subscribe</button>
+</div>
+    </footer>
+    <hr>
+    <div class="last">
+        <p>&copy 2025 GreenHarvest. All rights reserved.</p>       
+        </div>
+</body>
+</html>
